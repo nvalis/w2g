@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="https://via.placeholder.com/70x70">
+    <link rel="stylesheet" href="mvp.css">
+
+    <meta charset="utf-8">
+    <meta name="description" content="Watch Videos together">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Watch Videos together</title>
+
+    <script type="text/javascript" src="youtube.js"></script>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div id="youtube-player"></div>
+        </section>
+        <section>
+            <table width="100%">
+                <tr>
+                    <td width="11%">Player status</td>
+                    <td width="50%"><label id="player-id">-</label></td>
+                    <td width="20%"><label id="player-state">-</label></td>
+                    <td><label id="player-pos">-</label></td>
+                </tr>
+            </table>
+        </section>
+        <hr>
+        <section>
+            <table>
+                <tr>
+                    <td><label for="video-id">Video ID</label></td>
+                    <td><input type="text" id="video-id" size="10" value="L_LUpnjgPso"></td>
+                    <td><button id="set-video-url" onclick="setVideoId()">Set</button></td>
+                    <td><button id="play" onclick="playVideo()">Play</button></td>
+                    <td><button id="pause" onclick="pauseVideo()">Pause</button></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>
